@@ -87,10 +87,10 @@ npm test
 
 ## License
 
+MIT © maxdavinci
+
 ## Credits
 
 Developed with reference to [Search & Translate Panel](https://github.com/DimasioLab/Search-Translate-Panel)
 by DimasioLab (MIT). LangTranslator is an independent implementation with a
 different interface and feature set; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
-
-MIT © maxdavinci
