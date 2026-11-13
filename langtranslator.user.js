@@ -487,9 +487,9 @@
         const s = String(text).slice(0, 600);
         for (let i = 0; i < SCRIPTS.length; i++) if (SCRIPTS[i][1].test(s)) return SCRIPTS[i][0];
         if (/[\u0400-\u04FF]/.test(s)) {
-            if (/[іїєґ]/i.test(s)) return 'uk';
-            if (/[әғқңөұүһ]/i.test(s)) return 'kk';
-            if (/[ђјљњћџ]/i.test(s)) return 'sr';
+            if (/[\u0456\u0457\u0454\u0491]/i.test(s)) return 'uk';
+            if (/[\u04D9\u0493\u049B\u04A3\u04E9\u04B1\u04AF\u04BB]/i.test(s)) return 'kk';
+            if (/[\u0452\u0458\u0459\u045A\u045B\u045F]/i.test(s)) return 'sr';
             return 'ru';
         }
         return null;
