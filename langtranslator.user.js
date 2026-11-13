@@ -953,7 +953,7 @@ input[type=range] { accent-color: var(--acc); width: 100%; height: 18px; }
             const tag = v.localService ? 'local' : 'cloud';
             u.voiceSel.appendChild(h('option', {
                 value: v.voiceURI,
-                text: v.name + ' · ' + v.lang + ' · ' + tag
+                text: v.name + ' | ' + v.lang + ' | ' + tag
             }));
         });
         const exists = S.tts.voice && list.some(v => v.voiceURI === S.tts.voice);
@@ -1226,8 +1226,8 @@ input[type=range] { accent-color: var(--acc); width: 100%; height: 18px; }
         if (translated) u.fab.appendChild(ico('check', Math.round(S.size * 0.5)));
         else u.fab.appendChild(document.createTextNode(base(tl) === 'zh' ? (tl === 'zh-TW' ? 'TW' : 'ZH') : base(tl).toUpperCase()));
         u.fab.classList.toggle('on', translated);
-        u.fab.title = (translated ? t('restore') : t('page')) + ' · ' + langName(tl) + ' · ' + t('tagline');
-        u.badge.title = t('menu') + ' · ' + hkText(S.hk.menu);
+        u.fab.title = (translated ? t('restore') : t('page')) + ' | ' + langName(tl) + ' | ' + t('tagline');
+        u.badge.title = t('menu') + ' | ' + hkText(S.hk.menu);
         placeFab();
     }
 
