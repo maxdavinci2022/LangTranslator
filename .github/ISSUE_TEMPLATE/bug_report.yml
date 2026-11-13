@@ -1,0 +1,57 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Page URL
+      placeholder: https://example.com/article
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser and userscript manager
+      placeholder: Firefox 133 + Violentmonkey 2.28
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: LangTranslator version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Page translation
+        - Selection / result window
+        - Input field replacement
+        - Read aloud
+        - Interface language
+        - Settings import / export
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: diag
+    attributes:
+      label: Diagnostics output
+      description: Menu → Diagnostics, paste the result.
+      render: text
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      render: text
