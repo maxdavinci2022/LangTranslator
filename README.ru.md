@@ -73,4 +73,10 @@
 
 ## Лицензия
 
+## Благодарности
+
+Разработан с оглядкой на [Search & Translate Panel](https://github.com/DimasioLab/Search-Translate-Panel)
+от DimasioLab (MIT). LangTranslator — самостоятельная реализация с другим
+интерфейсом и набором функций; см. [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
 MIT © maxdavinci
